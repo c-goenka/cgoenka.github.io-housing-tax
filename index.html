@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Housing Taxes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,11 +17,43 @@
     <div class="container">
       <h1>Housing Taxes in Philadelphia</h1>
       <p>by Ella, Madeleine, and Chetan</p>
+      <div id="observablehq-viz1-a4be82c5"></div>
+    </div>
+
+    <!-- Section 1-->
+    <div class="row">
+      <div class="col-6">
+        <div id="observablehq-viz2-a4be82c5"></div>
+      </div>
+      <div class="col-6">
+        <h2>Section 1 title</h2>
+        <p>Section 1 text and explanation</p>
+      </div>
+    </div>
+
+    <!-- Section 2-->
+    <div class="row">
+      <div class="col-6">
+        <h2>Section 2 title</h2>
+        <p>Section 2 text and explanation</p>
+      </div>
+      <div class="col-6">
+        <div id="observablehq-viz2-a4be82c5"></div>
+      </div>
     </div>
 
   </div>
 
+  <!-- Each viz can only be shown once -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/130a978141a05b68@279.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "viz1") return new Inspector(document.querySelector("#observablehq-viz1-a4be82c5"));
+      if (name === "viz2") return new Inspector(document.querySelector("#observablehq-viz2-a4be82c5"));
+    });
+  </script>
 </body>
 </html>
