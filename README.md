@@ -1,3 +1,3 @@
 ## Housing Taxes in Philadelphia
 
-by Ella, Madeline, and Chetan
+by Ella, Madeleine, and Chetan
