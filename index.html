@@ -23,7 +23,7 @@
   <!-- HERO FIGURE/ANIMATION-->
   <section class="section-white">
     <div class="wrap center">
-      <div id="observablehq-fallingHouse2-521e89e8"></div>
+      <div id="observablehq-fallingHouse2-d3a63a06"></div>
     </div>
   </section>
 
@@ -115,7 +115,7 @@
 
   <section class="section-white">
     <div class="wrap two-col">
-      <div id="observablehq-phillyTract-521e89e8"></div>
+      <div id="observablehq-phillyTract-d3a63a06"></div>
       <div>
         <p>Philadelphia earned the nickname "City of Homes" in the 19th century because its unique rowhouse culture made it have one of the highest rates of homeownership in the US.</p>
       </div>
@@ -138,14 +138,14 @@
     <div class="wrap narrow">
       <p>These two maps tell a consistent story: in Philadelphia, where you live, your income, and your race are closely linked. And as we'll see, so is how your home gets assessed.</p>
     </div>
-    <div class="wrap two-col">
+    <div class="wrap two-col flush-top">
       <div>
         <p>Tracts can be useful for visualizing demographics like income:</p>
-        <div id="observablehq-phillyHex-2f481fed"></div>
+        <div id="observablehq-phillyHex-76b05def"></div>
       </div>
       <div>
         <p>Or the racial majority of a population in a specific area:</p>
-        <div id="observablehq-majorityRaceHex-521e89e8"></div>
+        <div id="observablehq-majorityRaceHex-d3a63a06"></div>
       </div>
     </div>
   </section>
@@ -165,7 +165,7 @@
         <p>In 2024, a <strong>Reinvestment Fund brief</strong> examined how changes to Philadelphia's property tax regime affected different communities.</p>
         <p>The findings raised concerns that <strong>assessment practices might be reinforcing existing inequalities.</strong></p>
       </div>
-      <div id="observablehq-sufficientTracts-521e89e8"></div>
+      <div id="observablehq-sufficientTracts-d3a63a06"></div>
     </div>
   </section>
 
@@ -176,7 +176,7 @@
       <p>In majority-White tracts, assessed values tend to fall below sale prices, so homeowners are paying taxes on less than their home is worth. In majority-Black tracts, it's the opposite, assessed values tend to exceed sale prices, so homeowners are taxed on more than their home is worth.</p>
     </div>
     <div class="wrap flush-top">
-      <div id="observablehq-barbelPlot2-521e89e8"></div>
+      <div id="observablehq-barbelPlot2-d3a63a06"></div>
     </div>
   </section>
 
@@ -224,25 +224,25 @@
       <p>The gaps aren't scattered randomly. They cluster: majority-Black and Hispanic tracts consistently show higher assessment ratios, and majority-White tracts consistently show lower ones.</p>
     </div>
     <div class="wrap flush-top">
-      <div id="observablehq-lollipopAssessmentGap-521e89e8"></div>
+      <div id="observablehq-lollipopAssessmentGap-d3a63a06"></div>
     </div>
   </section>
 
   <!-- TIMELINE -->
   <section class="section-white">
     <div class="wrap narrow">
-      <p>In 2019, a citywide change in assessment methodology sought to recalibrate property values, resulting in a notable convergence of assessment ratios across racial groups. However, the 2023 reassessment reversed that progress. Assessments rose an average of 31% citywide, but that increase was far from uniform: ratios surged to 97% in North Philadelphia East and 73% in North Philadelphia West, compared to just 5% in Center City, indicating that assessments are once again outpacing market values in majority-Black and majority-Hispanic communities.</p>
+      <p>In 2019, a citywide change in assessment methodology sought to recalibrate property values, resulting in a notable convergence of assessment ratios across racial groups. However, the 2023 reassessment reversed that progress. Assessments rose an average of 31% citywide, but that increase was far from uniform: ratios surged to 97% in North Philadelphia East and 73% in North Philadelphia West, compared to just 5% in Center City, indicating that assessments are once again outpacing market values in majority-Black and majority-Hispanic communities. The pattern holds along income lines too: lower-income neighborhoods face the same over-assessment burden, compounding the inequity.</p>
     </div>
     <div class="wrap flush-top">
-      <div id="observablehq-timelineAssessments-521e89e8"></div>
+      <div id="observablehq-timelineAssessments-d3a63a06"></div>
     </div>
   </section>
 
   <!-- SCATTER PLOTS -->
   <section class="section-white">
     <div class="wrap two-col">
-      <div id="observablehq-blackAssessmentRatio-521e89e8"></div>
-      <div id="observablehq-whiteAssessmentRatio-521e89e8"></div>
+      <div id="observablehq-blackAssessmentRatio-d3a63a06"></div>
+      <div id="observablehq-whiteAssessmentRatio-d3a63a06"></div>
     </div>
   </section>
 
@@ -272,24 +272,24 @@
 
   <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/2ac0147eb569d33c.js?v=4";
+    import define from "https://api.observablehq.com/d/f9bff3c52693c9d8.js?v=4";
     new Runtime().module(define, name => {
-      if (name === "fallingHouse2") return new Inspector(document.querySelector("#observablehq-fallingHouse2-521e89e8"));
-      if (name === "phillyTract") return new Inspector(document.querySelector("#observablehq-phillyTract-521e89e8"));
-      if (name === "majorityRaceHex") return new Inspector(document.querySelector("#observablehq-majorityRaceHex-521e89e8"));
-      if (name === "sufficientTracts") return new Inspector(document.querySelector("#observablehq-sufficientTracts-521e89e8"));
-      if (name === "barbelPlot2") return new Inspector(document.querySelector("#observablehq-barbelPlot2-521e89e8"));
-      if (name === "lollipopAssessmentGap") return new Inspector(document.querySelector("#observablehq-lollipopAssessmentGap-521e89e8"));
-      if (name === "timelineAssessments") return new Inspector(document.querySelector("#observablehq-timelineAssessments-521e89e8"));
-      if (name === "blackAssessmentRatio") return new Inspector(document.querySelector("#observablehq-blackAssessmentRatio-521e89e8"));
-      if (name === "whiteAssessmentRatio") return new Inspector(document.querySelector("#observablehq-whiteAssessmentRatio-521e89e8"));
+      if (name === "fallingHouse2") return new Inspector(document.querySelector("#observablehq-fallingHouse2-d3a63a06"));
+      if (name === "phillyTract") return new Inspector(document.querySelector("#observablehq-phillyTract-d3a63a06"));
+      if (name === "majorityRaceHex") return new Inspector(document.querySelector("#observablehq-majorityRaceHex-d3a63a06"));
+      if (name === "sufficientTracts") return new Inspector(document.querySelector("#observablehq-sufficientTracts-d3a63a06"));
+      if (name === "barbelPlot2") return new Inspector(document.querySelector("#observablehq-barbelPlot2-d3a63a06"));
+      if (name === "lollipopAssessmentGap") return new Inspector(document.querySelector("#observablehq-lollipopAssessmentGap-d3a63a06"));
+      if (name === "timelineAssessments") return new Inspector(document.querySelector("#observablehq-timelineAssessments-d3a63a06"));
+      if (name === "blackAssessmentRatio") return new Inspector(document.querySelector("#observablehq-blackAssessmentRatio-d3a63a06"));
+      if (name === "whiteAssessmentRatio") return new Inspector(document.querySelector("#observablehq-whiteAssessmentRatio-d3a63a06"));
     });
   </script>
   <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/efe2321e439d7628@315.js?v=4";
+    import define from "https://api.observablehq.com/d/427de4de6b9667e7@320.js?v=4";
     new Runtime().module(define, name => {
-      if (name === "phillyHex") return new Inspector(document.querySelector("#observablehq-phillyHex-2f481fed"));
+      if (name === "phillyHex") return new Inspector(document.querySelector("#observablehq-phillyHex-76b05def"));
     });
   </script>
 
