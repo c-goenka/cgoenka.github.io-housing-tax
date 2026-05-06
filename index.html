@@ -3,57 +3,275 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Housing Taxes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Housing Taxes in Philadelphia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400@display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Main Content -->
-  <div class="container">
-
-    <!-- Opening -->
-    <div class="container">
-      <h1>Housing Taxes in Philadelphia</h1>
-      <p>by Ella, Madeleine, and Chetan</p>
-      <div id="observablehq-viz1-a4be82c5"></div>
+  <!-- HERO HEADING -->
+  <section class="section-dark">
+    <div class="wrap center">
+      <p class="display dark">The Property Tax Assessment Gap</p>
     </div>
+  </section>
 
-    <!-- Section 1-->
-    <div class="row">
-      <div class="col-6">
-        <div id="observablehq-viz2-a4be82c5"></div>
-      </div>
-      <div class="col-6">
-        <h2>Section 1 title</h2>
-        <p>Section 1 text and explanation</p>
+  <!-- HERO FIGURE/ANIMATION-->
+  <section class="section-white">
+    <div class="wrap center">
+      <div id="observablehq-fallingHouse2-521e89e8"></div>
+    </div>
+  </section>
+
+  <!-- HOME VALUE -->
+  <section class="section-gray">
+    <div class="wrap center">
+      <p class="display accent">More than a structure. More than an address.</p>
+      <p class="display">We call it 'home,' but how do we define what it is actually worth?</p>
+    </div>
+  </section>
+
+  <!-- HOME VALUE INFOGRAPHIC -->
+  <section class="section-white">
+    <div class="wrap narrow center">
+      <p>A home holds many kinds of value at once. It's safety. It's community. It's financial security.</p>
+    </div>
+    <div class="wrap">
+      <img src="assests/home-worth.png" style="width: 100%;">
+    </div>
+    <div class="wrap narrow center">
+      <p>In economic terms, however, it's how much you paid for it.</p>
+    </div>
+  </section>
+
+  <!-- WHAT IS IT REALLY WORTH? -->
+  <section class="section-gray">
+    <div class="wrap">
+      <h2>So what's a home <em>really</em> worth?</h2>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap narrow">
+      <p><strong>In practice, the value of a house is measured as a dollar price, and different agents take
+      different measurements. Two of the most important are the market sale price — what a buyer actually
+      paid — and the assessed value, which is what the city officially estimates the property to be worth.</strong></p>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap">
+      <img src="assests/assessed-vs-sale.png" style="width: 100%;">
+    </div>
+  </section>
+
+  <!-- FAIRNESS -->
+  <section class="section-gray">
+    <div class="wrap center">
+      <h2>What makes a property assessment fair?</h2>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap narrow">
+      <p>Assessment standards like those from the International Association of Assessing Officers (IAAO)
+      define what fair should look like:</p>
+      <ul>
+        <li><strong>Accuracy:</strong> Assessed values should be close to actual market values.</li>
+        <li><strong>Uniformity:</strong> Similar properties should be assessed similarly.</li>
+        <li><strong>Equity:</strong> No group of homeowners should consistently pay more than their fair share.</li>
+      </ul>
+      <p>Fair assessments matter because property taxes fund schools, services, and infrastructure.
+      When assessments are biased or uneven, they distort who carries the cost of the city.</p>
+    </div>
+  </section>
+
+  <!-- STATS INFOGRAPHIC -->
+  <section class="section-white">
+    <div class="wrap">
+      <img src="assests/tax-burden.png" style="width: 100%;">
+    </div>
+  </section>
+
+  <!-- PHILADELPHIA -->
+  <section class="section-gray">
+    <div class="wrap">
+      <h2>Meet Philadelphia, "city of homes"</h2>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap two-col">
+      <div id="observablehq-phillyTract-521e89e8"></div>
+      <div>
+        <p class="callout"><strong>Did you know?</strong> Philly earned this nickname in the 19th century
+        because its unique rowhouse culture allowed for one of the highest rates of homeownership in the US.</p>
       </div>
     </div>
+    <div class="wrap narrow">
+      <p>The lines you see drawn on this map demarcate Census Tracts: small, relatively permanent geographic
+      subdivisions of a county, usually containing between 1,200 and 8,000 people. They are designed to be
+      homogeneous with respect to population characteristics, economic status, and living conditions.</p>
+    </div>
+  </section>
 
-    <!-- Section 2-->
-    <div class="row">
-      <div class="col-6">
-        <h2>Section 2 title</h2>
-        <p>Section 2 text and explanation</p>
+  <!-- MAPS — INCOME + RACE -->
+  <section class="section-white">
+    <div class="wrap two-col">
+      <div>
+        <p>This makes tracts a useful lens for seeing local demographic factors like income:</p>
+        <!-- <div id="observablehq-majorityRaceHex-521e89e8"></div> -->
       </div>
-      <div class="col-6">
-        <div id="observablehq-viz2-a4be82c5"></div>
+      <div>
+        <p>Or racial majority:</p>
+        <div id="observablehq-majorityRaceHex-521e89e8"></div>
       </div>
     </div>
+  </section>
 
-  </div>
+  <!-- REINVESTMENT FUND + SALES DATA MAP -->
+  <section class="section-white">
+    <div class="wrap two-col">
+      <div>
+        <p class="bold">In 2024, a Reinvestment Fund brief examined how changes to Philadelphia's property
+        tax regime affected different communities. The findings raised concerns that assessment practices
+        might be reinforcing existing inequalities. Using rich sales data from these tracts, let's dive
+        into the issue.</p>
+      </div>
+      <div id="observablehq-sufficientTracts-521e89e8"></div>
+    </div>
+  </section>
 
-  <!-- Each viz can only be shown once -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <!-- DUMBBELL CHART -->
+  <section class="section-white">
+    <div class="wrap two-col">
+      <div id="observablehq-barbelPlot2-521e89e8"></div>
+      <div>
+        <p class="callout">Here we see that home values tend to cluster by race. We also see that the
+        relationship between sale price and assessed value diverge in opposite directions
+        by race.</p>
+        <p>Mouse over the graph to see the exact value of the gaps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSESSMENT RATIO EXPLAINER -->
+  <section class="section-gray">
+    <div class="wrap center">
+      <h2>Understanding the Property Assessment Ratio</h2>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap narrow">
+      <p>When Philadelphia assesses a property, it estimates what that property is worth — this is the
+      <strong>assessed value</strong>. The <strong>assessment ratio</strong> compares that estimate to
+      what the property actually sold for:</p>
+
+      <div class="formula">Assessment Ratio = Assessed Value ÷ Sale Price</div>
+
+      <div class="ratio-list">
+        <div class="ratio-row">
+          <span class="badge neutral">1.0</span>
+          <p>Perfectly accurate — assessed at exactly its market value.</p>
+        </div>
+        <div class="ratio-row">
+          <span class="badge under">below 1.0</span>
+          <p><strong>Under-assessed:</strong> the city thinks it's worth less than buyers actually paid.</p>
+        </div>
+        <div class="ratio-row">
+          <span class="badge over">above 1.0</span>
+          <p><strong>Over-assessed:</strong> the city thinks it's worth more than buyers paid.</p>
+        </div>
+      </div>
+
+      <p>This matters because property taxes are based on assessed value. Homeowners in over-assessed
+      properties pay more in taxes relative to their home's actual market value — a hidden financial burden
+      that, as the chart below shows, falls disproportionately on Black and Hispanic neighborhoods
+      in Philadelphia.</p>
+
+      <div class="label-strip">
+        <span>← Underassessed: homeowners pay too little in taxes</span>
+        <span>Overassessed: homeowners pay too much in taxes →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVERGING BAR CHART -->
+  <section class="section-white">
+    <div class="wrap">
+      <div id="observablehq-lollipopAssessmentGap-521e89e8"></div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section-white">
+    <div class="wrap two-col">
+      <div>
+        <p>In 2019 there was a citywide change in assessment methodology that sought to recalibrate
+        property values, resulting in a notable convergence of assessment ratios across racial groups.</p>
+        <p>However, following the economic disruptions of COVID-19 and subsequent market shifts, the city
+        changed the assessment methodology again in 2023 — and saw a dramatic surge in ratios, particularly
+        in majority Black and Hispanic tracts, indicating that assessments are once again outpacing market
+        values in these communities.</p>
+      </div>
+      <div id="observablehq-timelineAssessments-521e89e8"></div>
+    </div>
+  </section>
+
+  <!-- SCATTER PLOTS — KEY FINDING -->
+  <section class="section-gray">
+    <div class="wrap center">
+      <h2>The pattern is clear</h2>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap two-col">
+      <div id="observablehq-blackAssessmentRatio-521e89e8"></div>
+      <div id="observablehq-whiteAssessmentRatio-521e89e8"></div>
+    </div>
+  </section>
+
+  <!-- CONCLUSION — teammate fills this in -->
+  <section class="section-gray">
+    <div class="wrap center">
+      <h2 class="accent">What does this mean for Philadelphia?</h2>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap narrow">
+      <p>Placeholder for conclusion.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap center">
+      <p>Developed by Ella Montgomery, Madeleine Melcher, and Chetan Goenka</p>
+    </div>
+  </footer>
+
+
   <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/130a978141a05b68@279.js?v=4";
+    import define from "https://api.observablehq.com/d/2ac0147eb569d33c.js?v=4";
     new Runtime().module(define, name => {
-      if (name === "viz1") return new Inspector(document.querySelector("#observablehq-viz1-a4be82c5"));
-      if (name === "viz2") return new Inspector(document.querySelector("#observablehq-viz2-a4be82c5"));
+      if (name === "fallingHouse2") return new Inspector(document.querySelector("#observablehq-fallingHouse2-521e89e8"));
+      if (name === "phillyTract") return new Inspector(document.querySelector("#observablehq-phillyTract-521e89e8"));
+      if (name === "majorityRaceHex") return new Inspector(document.querySelector("#observablehq-majorityRaceHex-521e89e8"));
+      if (name === "sufficientTracts") return new Inspector(document.querySelector("#observablehq-sufficientTracts-521e89e8"));
+      if (name === "barbelPlot2") return new Inspector(document.querySelector("#observablehq-barbelPlot2-521e89e8"));
+      if (name === "lollipopAssessmentGap") return new Inspector(document.querySelector("#observablehq-lollipopAssessmentGap-521e89e8"));
+      if (name === "timelineAssessments") return new Inspector(document.querySelector("#observablehq-timelineAssessments-521e89e8"));
+      if (name === "blackAssessmentRatio") return new Inspector(document.querySelector("#observablehq-blackAssessmentRatio-521e89e8"));
+      if (name === "whiteAssessmentRatio") return new Inspector(document.querySelector("#observablehq-whiteAssessmentRatio-521e89e8"));
     });
   </script>
+
 </body>
 </html>
