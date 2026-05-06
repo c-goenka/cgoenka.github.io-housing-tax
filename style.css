@@ -182,11 +182,11 @@ footer {
 }
 footer .wrap { padding: 2.5rem 2rem; }
 .footer-sources {
-  font-family: var(--body); /* Merriweather Sans */
+  font-family: var(--body);
   font-size: 14px;
   margin-top: 0.75rem;
 }
-footer strong { color: inherit; } /* override global strong { color: navy } inside footer */
+footer strong { color: inherit; }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
