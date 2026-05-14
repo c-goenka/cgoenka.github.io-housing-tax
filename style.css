@@ -275,10 +275,20 @@ h3:has(+ .ratio-list) {
 /* ── Chart titles ── */
 figure h2 {
   font-family: var(--body);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--charcoal);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
   margin-bottom: 0.25rem;
-  letter-spacing: 0.05em;  /* ← bumped from 0 */
-  text-transform: uppercase !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+figure h3 {
+  font-family: var(--body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0;
+  text-transform: none;
 }
