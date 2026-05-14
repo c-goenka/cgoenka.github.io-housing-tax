@@ -308,3 +308,17 @@ figure h3 {
   align-items: start;  /* changed from 'center' */
 }
 
+.two-col.align-stretch {
+  align-items: stretch;
+}
+
+.two-col.align-stretch > * {
+  height: 100%;
+}
+
+.two-col.align-stretch .editorial-card-left,
+.two-col.align-stretch .editorial-card-right {
+  display: flex;
+  align-items: center;
+}
+
