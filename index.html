@@ -235,7 +235,22 @@
     <div class="wrap flush-top">
       <div id="observablehq-lollipopAssessmentGap-d3a63a06"></div>
     </div>
-  </section>
+    <div class="wrap flush-top">
+      <div id="observablehq-arrowMapLegend-21838fcc"></div>
+      <div id="observablehq-arrowHexMap-21838fcc"></div>
+    </div>
+    <!-- <div class="wrap two-col align-top" style="margin-top: -50px;">
+      <div>
+        <p></p>
+        <div id="observablehq-lollipopAssessmentGap-d3a63a06"></div>
+      </div>
+      <div>
+        <p></p>
+        <div id="observablehq-arrowMapLegend-21838fcc"></div>
+        <div id="observablehq-arrowHexMap-21838fcc"></div>
+      </div>
+    </div>
+  </section> -->
 
   <!-- TIMELINE -->
   <section class="section-white">
@@ -320,6 +335,14 @@
     import define from "https://api.observablehq.com/d/427de4de6b9667e7@320.js?v=4";
     new Runtime().module(define, name => {
       if (name === "phillyHex") return new Inspector(document.querySelector("#observablehq-phillyHex-76b05def"));
+    });
+  </script>
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/f9bff3c52693c9d8@893.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "arrowMapLegend") return new Inspector(document.querySelector("#observablehq-arrowMapLegend-21838fcc"));
+      if (name === "arrowHexMap") return new Inspector(document.querySelector("#observablehq-arrowHexMap-21838fcc"));
     });
   </script>
 
