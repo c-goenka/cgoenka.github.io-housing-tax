@@ -278,6 +278,7 @@ figure h2 {
   font-size: 1.1rem;
   font-weight: 700;
   color: #000;
+  margin-top: 0;          /* ← add this */
   margin-bottom: 0.25rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
