@@ -274,7 +274,10 @@ h3:has(+ .ratio-list) {
 
 /* ── Chart titles ── */
 figure {
-  margin: 0 !important;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
   padding: 0 !important;
 }
 
