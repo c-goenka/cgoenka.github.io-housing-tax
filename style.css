@@ -308,8 +308,3 @@ figure h3 {
   align-items: start;  /* changed from 'center' */
 }
 
-div[id^="observablehq-"] text,
-div[id^="observablehq-"] tspan {
-  font-size: 0.75rem !important;
-  font-family: var(--body) !important;
-}
