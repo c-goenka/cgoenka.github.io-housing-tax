@@ -45,7 +45,7 @@ body {
 
 .hero-deck {
   font-family: var(--body);
-  font-size: clamp(1rem, 2vw, 1.2rem);  /* slightly bigger than .banner-subtitle's 1.15rem */
+  font-size: clamp(1rem, 2vw, 1.15rem);
   font-weight: 550;
   color: rgba(255, 255, 255, 0.85);
   max-width: 55ch;
