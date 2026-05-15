@@ -23,7 +23,7 @@ body {
 /* ── Sections ── */
 .section-white { background: #fff; }
 .section-gray  { background: var(--warm-bg); }
-.section-dark { background: linear-gradient(180deg, #1a1a1a, #0d1929); }
+.section-dark { background: var(--navy); }
 .section-white + .section-white { border-top: 1px solid rgba(28, 79, 120, 0.15); }
 
 .section-gray .wrap {
