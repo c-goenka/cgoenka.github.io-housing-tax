@@ -153,9 +153,9 @@ strong { color: #2c2c2c; font-weight: 700; }
   align-self: stretch;          /* ← new — fill the parent's height */
 }
 
-.badge.neutral { background: #ddd;    color: #333; }
-.badge.under   { background: #d6eaf8; color: #1c4f78; }
-.badge.over    { background: #fadbd8; color: #7b241c; }
+.badge.neutral { background: #f0f0f0; var(--charcoal); }
+.badge.under   { background: #e6ecf3; color: #4a6fa5; }
+.badge.over    { background: #f5e3e6; color: #8b2635; }
 
 /* ── Label strip ── */
 .label-strip {
@@ -167,7 +167,7 @@ strong { color: #2c2c2c; font-weight: 700; }
   font-size: 0.875rem;
   margin: 1.5rem 0;
   border-radius: 8px;
-  background: linear-gradient(to right, rgba(214, 234, 248, 0.8), rgba(250, 219, 216, 0.8));
+  background: linear-gradient(to right, rgba(230, 236, 243, 0.9), rgba(245, 227, 230, 0.9));
 }
 
 /* ── Footer ── */
