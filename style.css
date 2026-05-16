@@ -376,3 +376,15 @@ div[id^="observablehq-"] figure {
   font-size: 0.85rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
+
+/* ── Left-align the falling house animation ── */
+#observablehq-fallingHouse2-d3a63a06 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#observablehq-fallingHouse2-d3a63a06 svg {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
