@@ -249,12 +249,12 @@ h3:has(+ .ratio-list) {
 
 .criteria-card {
   background: var(--card-bg-blue);
-  border-top: 3px solid var(--card-accent-blue);
+  border-top: 3px solid var(--charcoal);
   border-radius: 6px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .criteria-card strong {
