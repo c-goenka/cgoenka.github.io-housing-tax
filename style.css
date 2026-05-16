@@ -236,7 +236,6 @@ h3:has(+ .ratio-list) {
   align-items: end;
 }
 
-/* ── IAAO Criteria Cards ── */
 .criteria-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -244,12 +243,14 @@ h3:has(+ .ratio-list) {
   margin: 1.5rem 0;
 }
 
-.criteria-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin: 1.5rem 0;
-  align-items: start;       /* ← added this */
+.criteria-card {
+  background: var(--card-bg-blue);
+  border-top: 3px solid var(--card-accent-blue);
+  border-radius: 6px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .criteria-card strong {
