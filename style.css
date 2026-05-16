@@ -249,6 +249,9 @@ h3:has(+ .ratio-list) {
   border-top: 3px solid var(--card-accent-blue);
   border-radius: 6px;
   padding: 1.5rem;
+  display: flex;            /* ← added */
+  flex-direction: column;   /* ← added */
+  justify-content: center;  /* ← added */
 }
 
 .criteria-card strong {
