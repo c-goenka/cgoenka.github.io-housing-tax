@@ -168,7 +168,7 @@ strong { color: #0a2d52; font-weight: 700; }
 /* ── Footer ── */
 footer {
   background: var(--navy);
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.85rem;
 }
 footer .wrap { padding: 2.5rem 3rem; }
